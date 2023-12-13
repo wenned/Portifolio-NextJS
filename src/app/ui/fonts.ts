@@ -1,4 +1,4 @@
-import {Poiret_One , Nova_Mono} from 'next/font/google';
+import {Poiret_One , Nova_Mono, Catamaran} from 'next/font/google';
 
 export const poiret = Poiret_One({
     weight:['400'],

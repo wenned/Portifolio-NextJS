@@ -4,7 +4,7 @@ export default function Logo (){
     
     return (
 
-        <div className="flex flex-col justify-center items-center ">
+        <div className="font-bold flex flex-col justify-center items-center ">
             <div className=" text-white flex justify-center items-center text-8xl" >
                 <div className={wsfont.className} >WS</div>
             </div>
