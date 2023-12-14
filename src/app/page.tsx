@@ -3,6 +3,7 @@ import Sobre from "./ui/dashboard/Sobre";
 import Inicio from "./ui/dashboard/inicio";
 import Logo from "./ui/dashboard/logo/logows";
 import NavBar from "./ui/dashboard/navbar";
+import Projetos from "./ui/dashboard/projetos";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       </nav>
       <div className="px-56 flex text-5xl justify-center items-center"><Inicio/></div>
       <div id="Sobre" className="overflow-hidden px-56 h-screen flex text-5xl justify-center items-center"><Sobre/></div>
-      <div id="Projetos" className="h-screen flex text-5xl justify-center items-center">Projetos</div>
+      <div id="Projetos" className="px-56 h-screen flex text-5xl justify-center items-center"><Projetos/></div>
     </main>
 
     <footer className="bg-gradient-to-r from-ws-l via-ws-c to-ws-r to-90%  h-96 flex text-5xl justify-center items-center">

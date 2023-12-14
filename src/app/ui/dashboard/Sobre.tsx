@@ -4,7 +4,7 @@ export default function Sobre (){
     return(
         <section className="border-r-2 border-white pr-3 m-6 grid text-2xl grid-cols-1 grid-rows-3 justify-center items-center" id="Sobre">
 
-            <div>
+            <div className="border-r-2 border-white ">
                 <p><strong>Nome: </strong>Wenned Silva</p>
                 <p><strong>Formação</strong></p>
 
