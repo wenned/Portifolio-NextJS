@@ -22,10 +22,14 @@ const config: Config = {
       },
 
       keyframes: {
-        fr: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+        openConteiner: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' }, 
         }
+      },
+
+      animation :{
+        'open_conteiner' : 'openConteiner 2s'
       }
 
     },
