@@ -11,7 +11,7 @@ export default function InfoProjeto(){
 
         <div  className='text-lg mx-3'>
                 
-            <div className='grid grid-cols-2 grid-rows-1 justify-center items-center'>
+            <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center`}>
                 <Image src='/page.png' width={500} height={500} alt='First image my portifolio'/>
                 <h1 className='font-bold text-5xl'>Tecnologias Usadas:</h1> 
             </div>

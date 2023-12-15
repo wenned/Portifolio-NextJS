@@ -25,12 +25,12 @@ const config: Config = {
         openConteiner: {
           '0%': { width: '0' },
           '100%': { width: '100%' }, 
-        }
-      },
+          }
+        },
 
-      animation :{
-        'open_conteiner' : 'openConteiner 2s'
-      }
+        animation :{
+          'open_conteiner' : 'openConteiner 2s',
+        },
 
     },
   },
