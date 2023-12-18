@@ -7,7 +7,7 @@ import Projetos from "./ui/dashboard/projetos";
 
 export default function Home() {
   return (
-    <>
+    <section className="overflow-hidden">
     <main className="bg-gradient-to-r  from-ws-l  via-ws-c to-ws-r grid grid-cols-1 grid-rows-4">
 
       <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center">
@@ -19,9 +19,9 @@ export default function Home() {
       <div id="Projetos" className="px-56 h-screen flex text-5xl justify-center items-center"><Projetos/></div>
     </main>
 
-    <footer className="bg-gradient-to-r from-ws-l via-ws-c to-ws-r to-90%  h-96 flex text-5xl justify-center items-center">
+    <footer className="bg-gradient-to-r from-ws-l via-ws-c to-ws-r to-90%  h-96 max-xl:h-auto flex text-5xl justify-center items-center">
       <Contato/>
     </footer>
-    </>
+    </section>
   )
 }
