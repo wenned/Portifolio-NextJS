@@ -7,14 +7,14 @@ import Projetos from "./ui/dashboard/projetos";
 
 export default function Home() {
   return (
-    <section className="overflow-hidden">
+    <section className="">
     <main className="bg-gradient-to-r  from-ws-l  via-ws-c to-ws-r grid grid-cols-1 grid-rows-4">
 
       <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center">
         <Logo/>
         <NavBar/>
       </nav>
-      <div className="px-56 flex text-5xl justify-center items-center"><Inicio/></div>
+      <div className="px-56 max-md:p-0 relative flex text-5xl justify-center items-center"><Inicio/></div>
       <div id="Sobre" className="overflow-hidden px-56 h-screen flex text-5xl justify-center items-center"><Sobre/></div>
       <div id="Projetos" className="px-56 h-screen flex text-5xl justify-center items-center"><Projetos/></div>
     </main>

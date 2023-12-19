@@ -46,28 +46,28 @@ export default function Inicio (){
 }
 
     return(
-        <section className='border-b-2 border-white grid grid-cols-2 h-screen justify-center items-center w-screen grid-row-1' id="Inicio">
+        <section className='border-b-2 flex flex-wrap border-white h-screen justify-center items-center w-screen' id="Inicio">
 
 
-            <div className='flex justify-center items-center' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
+            <div className='border-l-2 border-white flex justify-center items-center' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
 
-            <div className='space-y-14 border-r-2 border-white '>
+            <div className='ml-3 flex justify-center items-center flex-col border-r-2 border-white w-[75vh] '>
 
-                <h1 className='font-bold'>Habilidades</h1>
+                <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
-                <div className='flex w-10/12 justify-between'>
-                    <span className='cursor-pointer'><FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/></span>
-                    <span className='cursor-pointer'><FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/></span>
-                    <span className='cursor-pointer'><FaPython id='FaPython' onClick={()=>{Habilidades('FaPython')}}/></span>
-                    <span className='cursor-pointer'><FaNodeJs id='FaNodeJs' onClick={()=>{Habilidades('FaNodeJs')}}/></span>
-                    <span className='cursor-pointer'><FaReact id='FaReact' onClick={()=>{Habilidades('FaReact')}}/></span>
-                    <span className='cursor-pointer'><FaHtml5 id='FaHtml5' onClick={()=>{Habilidades('FaHtml5')}}/> </span>
-                    <span className='cursor-pointer'><FaCss3 id='FaCss3' onClick={()=>{Habilidades('FaCss3')}}/></span> 
+                <div className='flex py-4  max-[540px]:w-11/12 w-10/12  justify-between'>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/></span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/></span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaPython id='FaPython' onClick={()=>{Habilidades('FaPython')}}/></span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaNodeJs id='FaNodeJs' onClick={()=>{Habilidades('FaNodeJs')}}/></span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaReact id='FaReact' onClick={()=>{Habilidades('FaReact')}}/></span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaHtml5 id='FaHtml5' onClick={()=>{Habilidades('FaHtml5')}}/> </span>
+                    <span className='cursor-pointer max-[540px]:text-4xl'><FaCss3 id='FaCss3' onClick={()=>{Habilidades('FaCss3')}}/></span> 
                 </div>
 
-                <div className='relative flex justify-center items-center h-[100px] w-10/12 '>
-                    <span className='font-bold text-[12rem] font-[Catamaran] text-white'>"</span>
-                    <div className='font-bold text-4xl'>{Valor}</div>
+                <div className='relative flex justify-center items-center h-[150px] w-10/12 '>
+                    <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] font-[Catamaran] text-white'>"</span>
+                    <div className='font-bold text-4xl max-[670px]:text-3xl max-[540px]:text-xl '>{Valor}</div>
                 </div>
             </div>
         </section>
