@@ -8,15 +8,15 @@ import Projetos from "./ui/dashboard/projetos";
 export default function Home() {
   return (
     <section className="">
-    <main className="bg-gradient-to-r  from-ws-l  via-ws-c to-ws-r grid grid-cols-1 grid-rows-4">
+    <main className="bg-gradient-to-r  from-ws-l  via-ws-c to-ws-r flex flex-col">
 
-      <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center">
+      <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center h-[100vh]">
         <Logo/>
         <NavBar/>
       </nav>
       <div className="px-56 max-md:p-0 relative flex text-5xl justify-center items-center"><Inicio/></div>
-      <div id="Sobre" className="overflow-hidden px-56 h-screen flex text-5xl justify-center items-center"><Sobre/></div>
-      <div id="Projetos" className="px-56 h-screen flex text-5xl justify-center items-center"><Projetos/></div>
+      <div id="Sobre" className="overflow-hidden px-56  max-md:p-0 max-[320px]:h-[150vh] h-screen flex text-5xl justify-center items-center"><Sobre/></div>
+      <div id="Projetos" className="px-56 max-md:p-0 h-screen max flex text-5xl justify-center items-center"><Projetos/></div>
     </main>
 
     <footer className="bg-gradient-to-r from-ws-l via-ws-c to-ws-r to-90%  h-96 max-xl:h-auto flex text-5xl justify-center items-center">
