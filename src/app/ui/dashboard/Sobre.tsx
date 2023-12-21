@@ -2,9 +2,9 @@ export default function Sobre (){
 
 
     return(
-        <section className="border-r-2 border-white pr-3 m-6 grid text-2xl grid-cols-1 grid-rows-3 justify-center items-center" id="Sobre">
+        <section className="max-sm:h-auto border-r-2 relative max-sm:border-none border-white pr-3 m-6 max-sm:m-2 text-2xl max-sm:text-sm max-md:text-lg flex flex-col " id="Sobre">
 
-            <div className="border-r-2 border-white ">
+            <div className="border-r-2 border-white  max-sm:border-none ">
                 <p><strong>Nome: </strong>Wenned Silva</p>
                 <p><strong>Formação</strong></p>
 
@@ -14,7 +14,7 @@ export default function Sobre (){
                 <p><strong>Idioma :</strong> Portugues, Ingles - <small>Cursando</small></p>
             </div>
 
-            <div className="text-justify p-6 space-y-3">
+            <div className="text-justify p-6 max-sm:p-2 max-sm:space-y-0 space-y-3">
                 <p>Sou uma pessoa dinâmica, aberto a novas experiências, sempre tentando ser pontual e cumprir compromissos, nascido em,
                 <strong>Cândido Mendes, MA</strong>, mudei-me para <strong>Imperatriz, MA</strong> aos 16 anos, sempre com objetivo de me especializar na area da tecnologia,
                  mesmo naquela época não sabendo para qual área realmente focar, sempre me adaptei facilmente em varias áreas da programação tanto, <strong>Programação Back-end</strong>,
