@@ -49,13 +49,13 @@ export default function Inicio (){
         <section className='border-b-2 flex flex-wrap border-white h-screen justify-center items-center w-screen' id="Inicio">
 
 
-            <div className='border-l-2 border-white flex justify-center items-center' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
+            <div className='border-l-2 border-white flex justify-center items-center max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
 
-            <div className='ml-3 flex justify-center items-center flex-col border-r-2 border-white w-[75vh] '>
+            <div className='ml-3 flex justify-center items-center flex-col border-r-2 border-white w-[75vh] max-[1150px]:w-full '>
 
                 <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
-                <div className='flex py-4 text-4xl max-[540px]:w-11/12 w-10/12 justify-between'>
+                <div className='flex py-4 text-4xl max-[320px]:text-2xl max-[540px]:w-11/12 w-10/12 justify-between'>
                     <span className='cursor-pointer '><FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/></span>
                     <span className='cursor-pointer'><FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/></span>
                     <span className='cursor-pointer'><FaPython id='FaPython' onClick={()=>{Habilidades('FaPython')}}/></span>
@@ -66,8 +66,8 @@ export default function Inicio (){
                 </div>
 
                 <div className='relative flex justify-center items-center h-[150px] w-10/12 '>
-                    <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] font-[Catamaran] text-white'>"</span>
-                    <div className='font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-xl '>{Valor}</div>
+                    <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[320px]:text-[3rem] font-[Catamaran] text-white'>"</span>
+                    <div className='font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-xl max-[320px]:text-base '>{Valor}</div>
                 </div>
             </div>
         </section>
