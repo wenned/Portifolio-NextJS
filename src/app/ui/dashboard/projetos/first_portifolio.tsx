@@ -12,8 +12,8 @@ export default function InfoProjeto(){
         <div  className='text-lg mx-3'>
                 
             <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center`}>
-                <Image src='/page.png' width={350} height={350} className='max-md:w-64 max-sm:w-36 max-[320px]:w-24' alt='First image my portifolio'/>
-                <h1 className='font-bold text-5xl max-md:text-3xl max-sm:text-lg max-[320px]:text-sm'>Tecnologias Usadas:</h1> 
+                <Image src='/page.png' width={350} height={350} className='max-md:w-64 max-sm:w-36 max-[375px]:w-24' alt='First image my portifolio'/>
+                <h1 className='font-bold text-5xl max-md:text-3xl max-sm:text-lg max-[375px]:text-sm'>Tecnologias Usadas:</h1> 
             </div>
             
             <div className='flex justify-around text-xl max-md:text-sm max-sm:text-xs max-sm:flex-wrap py-5 max-[320px]:py-1' >
