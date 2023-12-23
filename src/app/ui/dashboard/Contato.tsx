@@ -1,8 +1,23 @@
+'use client'
+
 import {VscGithub} from 'react-icons/vsc'
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import Logo from './logo/logo_ws_pg';
 
 export default function Contato(){
+
+    const FaLink = () => {
+        window.open("https://www.linkedin.com/in/wenned-silva-078b30180/", '_blank');
+      };
+
+      const FaGit = () => {
+        window.open("https://github.com/wenned", '_blank');
+      };
+
+      const FaTw = () => {
+        window.open("https://twitter.com/WennedSilva", '_blank');
+      };
+
     return(
         <div className="flex justify-around w-screen flex-wrap" id="Contato">
 
@@ -30,9 +45,9 @@ export default function Contato(){
 
                 <div className='flex justify-center items-center'><Logo/></div>
                 <div className='flex justify-between items-center '>
-                    <FaLinkedinIn alt="Linkdin"/>
-                    <VscGithub alt="GitHub" />
-                    <FaXTwitter  alt="Twitter" />
+                    <span className='cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>
+                    <span className='cursor-pointer'><VscGithub alt="GitHub" onClick={FaGit}/></span>
+                    <span className='cursor-pointer'><FaXTwitter  alt="Twitter" onClick={FaTw}/></span>
                 </div>
             </div>
         </div>
