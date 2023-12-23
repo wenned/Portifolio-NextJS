@@ -2,7 +2,7 @@ export default function Sobre (){
 
 
     return(
-        <section className="max-sm:h-auto border-r-2 relative max-sm:border-none border-white pr-3 m-6 max-sm:m-2 text-2xl max-sm:text-sm max-md:text-lg flex flex-col " id="Sobre">
+        <section className="max-sm:h-auto border-r-2 relative max-sm:border-none border-white pr-3 m-6 max-sm:m-2 text-2xl max-xl:text-xl max-[478px]:text-sm max-[848px]:text-base flex flex-col " id="Sobre">
 
             <div className="border-r-2 border-white  max-sm:border-none ">
                 <p><strong>Nome: </strong>Wenned Silva</p>
