@@ -9,10 +9,7 @@ export default function Projetos(){
     const [statePortifolio, setStatePortifolio] = useState(0)
     const [stateRest, setStateRest] = useState(0)
  
-
-
     function ActiveProjeto(args: string | any[]){
-        console.log(args)
 
         switch(args){
 
@@ -24,8 +21,7 @@ export default function Projetos(){
                 }else{
                     setStatePortifolio(0)
                     setStateRest(0)
-                }
-                
+                } 
                 break
 
             case 'RestAPI':
@@ -38,7 +34,6 @@ export default function Projetos(){
                 setStateRest(0)
                 setStatePortifolio(0)
             }
-            
             break
 
             default:
@@ -47,7 +42,7 @@ export default function Projetos(){
     }
 
     return (
-        <div className='border-l-2 border-white text-7xl flex w-screen justify-center'>
+        <div id="Projetos" className='border-l-2 border-white text-7xl flex w-screen justify-center'>
 
             <div onClick={()=>{ActiveProjeto('Portifolio')}} 
                 className={`${statePortifolio === 1?'animate-open_conteiner w-full overflow-clip cursor-pointer rounded-lg mx-2 flex  h-[80vh] bg-gradient-to-b from-transparent via-45% via-white to-transparent items-center justify-center': 
