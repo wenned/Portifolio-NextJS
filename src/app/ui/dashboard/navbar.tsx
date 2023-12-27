@@ -36,8 +36,6 @@ export default function NavBar() {
                 setisContato(true)
             }else{setisContato(false)}
 
-            console.log(statusNav.Inico ,statusNav.Inico <=211 , statusNav.Inico > -584)            //console aqui
-
             if (elementO !== undefined && elementO?.top <= 0) {
                 setisFixed(true)
             }
@@ -55,8 +53,6 @@ export default function NavBar() {
             };
         }
     }, []);
-
-
 
     return (
 
