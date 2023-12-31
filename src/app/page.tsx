@@ -7,7 +7,7 @@ import Projetos from "./ui/dashboard/projetos";
 
 export default function Home() {
   return (
-    <section className="bg-gradient-to-r  from-ws-l  via-ws-c to-ws-r flex flex-col">
+    <section className="bg-gradient-to-r text-white from-ws-l  via-ws-c to-ws-r flex flex-col">
 
       <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center h-[100vh]">
         <Logo/>
