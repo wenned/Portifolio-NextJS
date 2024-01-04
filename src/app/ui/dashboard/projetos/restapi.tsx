@@ -10,7 +10,7 @@ export default function RestAPI (){
     }
 
     return (
-        <div  className='text-lg mx-3'>
+        <div className='text-lg text-black mx-3'>
             
             <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center max-sm:flex max-sm:flex-col`}>
                 <Image src='/restap.png' width={400} height={400} className='max-sm:w-48 max-md:w-64 max-[375px]:w-32' alt='First image restapi'/>

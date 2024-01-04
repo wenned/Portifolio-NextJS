@@ -9,7 +9,7 @@ export default function InfoProjeto(){
 
     return(
 
-        <div  className='text-lg mx-3'>
+        <div  className='text-lg  text-black mx-3'>
                 
             <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center`}>
                 <Image src='/page.png' width={350} height={350} className='max-md:w-64 max-sm:w-36 max-[375px]:w-24' alt='First image my portifolio'/>
