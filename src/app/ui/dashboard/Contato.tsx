@@ -32,7 +32,7 @@ export default function Contato(){
             </div>
 
             <div className='w-[320px] space-y-3 border-l-2 border-l-white p-4 mx-3 max-[702px]:border-r-2 max-[702px]:border-r-white max-[702px]:border-0'>
-                <span className='text-4xl max-md:text-3xl font-semibold'>Desenvolvimento</span>
+                <span className='text-4xl text-black max-md:text-3xl font-semibold'>Desenvolvimento</span>
                 <ol className='text-3xl max-md:text-2xl'>
                     <li>Next.JS</li>
                     <li>React</li>
