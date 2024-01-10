@@ -49,9 +49,9 @@ export default function Inicio (){
         <section itemID="Inicio" className='border-b-2 flex flex-wrap border-white h-screen justify-center items-center w-screen' id="Inicio">
 
 
-            <div className='border-l-2 border-white flex justify-center items-center max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
+            <div className='border-l-2 border-white flex justify-center items-center  max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
 
-            <div className='ml-3 flex justify-center items-center flex-col border-r-2 border-white w-[75vh] max-[1150px]:w-full '>
+            <div className='ml-3 flex justify-center items-center flex-col border-r-2 border-white  max-[1150px]:w-full'>
 
                 <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
