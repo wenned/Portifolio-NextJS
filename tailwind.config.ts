@@ -18,7 +18,8 @@ const config: Config = {
         'ws-hov':'#E3DCA1',
         'ws-l': '#f0c27b',
         'ws-c': '#B55EA5',
-        'ws-r': '#4b1248'
+        'ws-r': '#4b1248',
+        'ws-new':'#07edadff'
       },
 
       keyframes: {

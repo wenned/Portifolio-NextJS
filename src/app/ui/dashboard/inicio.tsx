@@ -46,12 +46,12 @@ export default function Inicio (){
 }
 
     return(
-        <section itemID="Inicio" className='border-b-2 flex flex-wrap border-white h-screen justify-center items-center w-screen' id="Inicio">
+        <section itemID="Inicio" className='border-b-2 flex flex-wrap border-ws-new h-screen justify-center items-center w-screen' id="Inicio">
 
 
-            <div className='w-96 border-l-2 border-white flex justify-center items-center max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
+            <div className='w-96 border-l-2 border-ws-new flex justify-center items-center max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
 
-            <div className='w-2/3 ml-3 flex justify-center items-center flex-col border-r-2 border-white  max-[1150px]:w-full'>
+            <div className='w-2/3 ml-3 flex justify-center items-center flex-col border-r-2 border-ws-new  max-[1150px]:w-full'>
 
                 <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
@@ -66,7 +66,7 @@ export default function Inicio (){
                 </div>
 
                 <div className='relative flex justify-center items-center h-[150px] w-10/12 '>
-                    <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[375px]:text-[3rem] font-[Catamaran] text-white'>"</span>
+                    <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[375px]:text-[3rem] font-[Catamaran] text-ws-new'>"</span>
                     <div className='font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-xl'>{Valor}</div>
                 </div>
             </div>
