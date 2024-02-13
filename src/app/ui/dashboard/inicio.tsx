@@ -55,7 +55,7 @@ export default function Inicio (){
 
                 <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
-                <div className='flex py-4 text-4xl max-[375px]:text-2xl max-[540px]:w-11/12 w-10/12 justify-between'>
+                <div className='flex py-4 text-4xl max-[375px]:text-2xl max-[540px]:w-11/12 w-10/12 justify-between z-10'>
                     <span className='cursor-pointer '><FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/></span>
                     <span className='cursor-pointer'><FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/></span>
                     <span className='cursor-pointer'><FaPython id='FaPython' onClick={()=>{Habilidades('FaPython')}}/></span>

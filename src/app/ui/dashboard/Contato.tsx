@@ -2,7 +2,6 @@
 
 import {VscGithub} from 'react-icons/vsc'
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-import Logo from './logo/logo_ws_pg';
 
 export default function Contato(){
 
@@ -20,15 +19,15 @@ export default function Contato(){
 
       const name = "< Wenned Developer />"
     return(
-        <div itemID='Contato' className="flex w-screen" id="Contato">
+        <div itemID='Contato' className="flex w-screen max-sm:flex-col" id="Contato">
 
              <div className='flex p-7 w-screen justify-around items-center border-r-2 border-white'>
-                <span className='cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>
-                <span className='cursor-pointer'><VscGithub alt="GitHub" onClick={FaGit}/></span>
-                <span className='cursor-pointer'><FaXTwitter  alt="Twitter" onClick={FaTw}/></span>
+                <span className='max-sm:text-2xl cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>
+                <span className='max-sm:text-2xl cursor-pointer'><VscGithub alt="GitHub" onClick={FaGit}/></span>
+                <span className='max-sm:text-2xl cursor-pointer'><FaXTwitter  alt="Twitter" onClick={FaTw}/></span>
             </div>         
 
-            <div className='flex w-screen justify-center items-center'>{name}</div>
+            <div className='max-sm:text-base flex w-screen justify-center items-center'>{name}</div>
         </div>
     )
 }

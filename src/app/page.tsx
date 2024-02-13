@@ -9,7 +9,7 @@ export default function Home() {
   return (
     < >
       <header>
-        <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center h-[100vh]">
+        <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-[100vh]">
           <Logo/>
           <NavBar/>
         </nav>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </main>
       
-      <footer className="bg-ws-new h-64 max-xl:h-auto flex text-5xl justify-center items-center">
+      <footer className="bg-ws-new h-64 max-sm:h-56 max-xl:h-auto flex text-5xl justify-center items-center">
         <Contato/>
       </footer>
     </>

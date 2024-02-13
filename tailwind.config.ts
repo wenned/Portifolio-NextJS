@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       
       letterSpacing: {
-        wide: '-.25em',
+        wide: '-.28em',
         widest: '-0.4em',
        },
 
@@ -20,6 +20,10 @@ const config: Config = {
         'ws-c': '#B55EA5',
         'ws-r': '#4b1248',
         'ws-new':'#07edadff'
+      },
+
+      fontFamily: {
+        wsfont: ['Poiret One', 'sans-serif'],
       },
 
       keyframes: {
