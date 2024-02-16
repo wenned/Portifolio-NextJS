@@ -58,7 +58,7 @@ export default function NavBar() {
 
         <>
             <span className="absolute bottom-0" id="NavBar"></span>
-            <nav className={`font-semibold grid grid-cols-4 grid-rows-1 text-xl bg-gradient-to-b from-slate-400 w-full hover:focus:
+            <nav className={`text-white font-semibold grid grid-cols-4 grid-rows-1 text-xl bg-gradient-to-b from-slate-400 w-full hover:focus:
                             ${isFixed ? 'fixed top-0 z-10' : 'absolute bottom-0'}`}>
                 <Link rel="preload" href="#Inicio"><span className={`h-12 max-md:text-sm max-sm:text-xs max-[379px]:text-[0.55rem] text-center -tracking-widest flex justify-center items-center hover:bg-ws-new border-b-ws-new ${isInicio?'border-b-4':'border-b-0'}`}>Inicio</span></Link>
                 <Link rel="preload" href="#Sobre"><span className={`h-12 max-md:text-sm max-sm:text-xs max-[379px]:text-[0.55rem] text-center -tracking-widest flex justify-center items-center hover:bg-ws-new border-b-ws-new ${isSobre?'border-b-4':'border-b-0'}`}>Sobre</span></Link>

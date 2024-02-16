@@ -9,22 +9,22 @@ export default function Home() {
   return (
     < >
       <header>
-        <nav className="h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-[100vh]">
+        <nav className="bg-ws-body h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-[100vh]">
           <Logo/>
           <NavBar/>
         </nav>
       </header>
       
       <main>
-        <div className="max-xl:px-8 max-md:p-0 relative flex text-5xl justify-center items-center">
+        <div className="bg-ws-body max-xl:px-8 max-md:p-0 relative flex text-5xl justify-center items-center">
           <Inicio/>
         </div>
 
-        <div className="overflow-hidden px-56  max-xl:px-8 max-md:p-0 max-[375px]:h-[120vh] h-screen flex text-5xl justify-center items-center">
+        <div className="bg-ws-body overflow-hidden px-56  max-xl:px-8 max-md:p-0 max-[375px]:h-[120vh] h-screen flex text-5xl justify-center items-center">
           <Sobre/>
         </div>
 
-        <div className="px-56 max-xl:px-8 max-md:p-0 h-screen flex text-5xl justify-center items-center">
+        <div className="bg-ws-body px-56 max-xl:px-8 max-md:p-0 h-screen flex text-5xl justify-center items-center">
           <Projetos/>
         </div>
       </main>
