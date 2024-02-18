@@ -17,7 +17,7 @@ const config: Config = {
        colors: {
         'ws-hov':'#E3DCA1',
         'ws-l': '#f0c27b',
-        'ws-c': '#B55EA5',
+        'ws-c': '#c2c2c2',
         'ws-body': '#1c1c24',
         'ws-new':'#07edadff'
       },

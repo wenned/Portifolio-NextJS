@@ -10,7 +10,7 @@ export default function RestAPI (){
     }
 
     return (
-        <div className='text-lg text-black mx-3'>
+        <div className='text-lg text-white mx-3'>
             
             <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center max-sm:flex max-sm:flex-col`}>
                 <Image src='/restap.png' width={400} height={400} className='max-sm:w-48 max-md:w-64 max-[375px]:w-32' alt='First image restapi'/>
@@ -18,9 +18,9 @@ export default function RestAPI (){
             </div>
 
             <div className='flex justify-around text-xl py-5 max-sm:text-xs max-[375px]:py-1' >
-                <span className='flex flex-row justify-center items-center'><FaNodeJs/> : Node.JS</span>
-                <span className='flex flex-row justify-center items-center'><BiLogoMongodb/> : MongoDB</span>
-                <span className='flex flex-row justify-center items-center'><SiExpress/> : Express</span>
+                <span className='flex flex-row justify-center items-center'><span className='text-ws-new'><FaNodeJs/></span> : Node.JS</span>
+                <span className='flex flex-row justify-center items-center'><span className='text-ws-new'><BiLogoMongodb/></span> : MongoDB</span>
+                <span className='flex flex-row justify-center items-center'><span className='text-ws-new'><SiExpress/></span> : Express</span>
             </div>
 
             <div className='text-center text-xl max-md:text-sm max-sm:text-xs max-[375px]:text-[10px]'>
@@ -34,7 +34,7 @@ export default function RestAPI (){
 
             </div>
         
-            <div className='flex py-5 text-xl max-sm:text-xs max-md:text-base max-[375px]:text-[10px] justify-center items-center'><FaLink onClick={Falin}/> <p onClick={Falin}>: https://github.com/wenned/API-NODE-MONGODB</p></div>
+            <div className='flex py-5 text-xl max-sm:text-xs max-md:text-base max-[375px]:text-[10px] justify-center items-center text-ws-new'><FaLink onClick={Falin}/> <p className='text-white' onClick={Falin}>: https://github.com/wenned/API-NODE-MONGODB</p></div>
 
         </div>
     )

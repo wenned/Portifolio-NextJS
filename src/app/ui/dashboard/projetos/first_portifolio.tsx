@@ -9,7 +9,7 @@ export default function InfoProjeto(){
 
     return(
 
-        <div  className='text-lg  text-black mx-3'>
+        <div  className='text-lg  text-white mx-3'>
                 
             <div className={`grid grid-cols-2 grid-rows-1 justify-center items-center`}>
                 <Image src='/page.png' width={350} height={350} className='max-md:w-64 max-sm:w-36 max-[375px]:w-24' alt='First image my portifolio'/>
@@ -17,10 +17,10 @@ export default function InfoProjeto(){
             </div>
             
             <div className='flex justify-around text-xl max-md:text-sm max-sm:text-xs max-sm:flex-wrap py-5 max-[320px]:py-1' >
-                <span className='flex flex-row justify-center items-center max-sm:my-2'><FaJs/> : JavaScript</span>
-                <span className='flex flex-row justify-center items-center max-sm:my-2'><FaHtml5/> : Hypertext Markup Language</span>
-                <span className='flex flex-row justify-center items-center max-sm:my-2'><FaCss3/> : Cascading Style Sheets</span>
-                <span className='flex flex-row justify-center items-center max-sm:my-2'><FaReact/> : React</span>
+                <span className='flex flex-row justify-center items-center max-sm:my-2'><span className='text-ws-new'><FaJs/></span> : JavaScript</span>
+                <span className='flex flex-row justify-center items-center max-sm:my-2'><span className='text-ws-new'><FaHtml5/></span> : Hypertext Markup Language</span>
+                <span className='flex flex-row justify-center items-center max-sm:my-2'><span className='text-ws-new'><FaCss3/></span> : Cascading Style Sheets</span>
+                <span className='flex flex-row justify-center items-center max-sm:my-2'><span className='text-ws-new'><FaReact/></span> : React</span>
             </div>
 
             <div className='text-center text-lg max-md:text-sm max-sm:text-xs max-[320px]:text-[10px]' >
@@ -35,7 +35,7 @@ export default function InfoProjeto(){
                 
             </div>
 
-            <div className='flex py-5 text-2xl max-md:text-base max-[320px]:text-sm justify-center items-center'><FaLink onClick={Falin}/> <p onClick={Falin}>: https://wennedsilva.netlify.app/</p></div>
+            <div className='flex py-5 text-2xl max-md:text-base max-[320px]:text-sm justify-center items-center text-ws-new'><FaLink onClick={Falin}/> <p className='text-white' onClick={Falin}>: https://wennedsilva.netlify.app/</p></div>
         </div>     
     )
 };
