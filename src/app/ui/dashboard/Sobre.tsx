@@ -3,7 +3,7 @@ export default function Sobre (){
 
     return(
         <section itemID="Sobre" className="text-white max-sm:h-auto border-r-2 relative max-sm:border-none border-ws-new pr-3 m-6 max-sm:m-2 text-2xl max-xl:text-xl max-[478px]:text-sm max-[848px]:text-base flex flex-col " id="Sobre">
-
+            <div className="flex justify-end w-full items-end -tracking-tighter text-7xl">Sobre</div>
             <div className="border-r-2 border-ws-new max-sm:border-none ">
                 <p><strong>Nome: </strong>Wenned Silva</p>
                 <p><strong>Formação</strong></p>

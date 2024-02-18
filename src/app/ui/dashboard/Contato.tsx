@@ -22,12 +22,12 @@ export default function Contato(){
         <div itemID='Contato' className="flex w-screen max-sm:flex-col" id="Contato">
 
              <div className='flex p-7 w-screen justify-around items-center border-r-2 border-white'>
-                <span className='max-sm:text-2xl cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>
-                <span className='max-sm:text-2xl cursor-pointer'><VscGithub alt="GitHub" onClick={FaGit}/></span>
-                <span className='max-sm:text-2xl cursor-pointer'><FaXTwitter  alt="Twitter" onClick={FaTw}/></span>
+                <span className='max-lg:text-2xl cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>
+                <span className='max-lg:text-2xl cursor-pointer'><VscGithub alt="GitHub" onClick={FaGit}/></span>
+                <span className='max-lg:text-2xl cursor-pointer'><FaXTwitter  alt="Twitter" onClick={FaTw}/></span>
             </div>         
 
-            <div className='max-sm:text-base flex w-screen justify-center items-center'>{name}</div>
+            <div className='max-sm:text-base max-md:text-2xl max-lg:text-3xl flex w-screen justify-center items-center'>{name}</div>
         </div>
     )
 }
