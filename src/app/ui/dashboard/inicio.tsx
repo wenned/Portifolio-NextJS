@@ -48,7 +48,6 @@ export default function Inicio (){
     return(
         <section itemID="Inicio" className='text-white border-b-2 flex flex-wrap border-ws-new h-screen justify-center items-center w-screen' id="Inicio">
 
-
             <div className='w-96 border-l-2 border-ws-new flex justify-center items-center max-[1150px]:w-full' ><Image alt='inicio' src="/home.png" width={550} height={550}/></div>
 
             <div className='w-2/3 ml-3 flex justify-center items-center flex-col border-r-2 border-ws-new  max-[1150px]:w-full'>

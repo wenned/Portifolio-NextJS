@@ -20,6 +20,5 @@ export default function StatusNavBar() {
         'Contato': posContato?.top ?? -Infinity,
     }
 
-
     return posElemtento
 }
