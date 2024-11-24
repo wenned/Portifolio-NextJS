@@ -14,10 +14,9 @@ export default function Sobre (){
             </div>
 
             <div className="text-justify p-6 max-sm:p-2 max-sm:space-y-0 space-y-3">
-                <p>Sou uma pessoa dinâmica, aberto a novas experiências, sempre tentando ser pontual e cumprir compromissos, nascido em,
-                <strong> Cândido Mendes, MA</strong>, mudei-me para <strong>Imperatriz, MA</strong> aos 16 anos, sempre com objetivo de engressar na area da tecnologia,
-                 onde hoje aos 34 anos posso finalmente dar andamento ao meu objetivo de carreira, sempre me adaptei facilmente em varias áreas da programação tanto, <strong>Programação Back-end</strong>,
-                 onde foi meu primeiro contato com programação, e agora nessa nova fase com <strong>Programação Fronte-end</strong></p>
+                <p>Sou uma pessoa dinâmica, aberto a novas experiências, nascido em,<strong> Cândido Mendes, MA</strong>, mudei-me para <strong>Imperatriz, MA</strong> aos 16 anos, sempre com objetivo de engressar na area da tecnologia,
+                 onde hoje aos 34 anos posso finalmente dar andamento ao meu objetivo de carreira, sempre me adaptei facilmente em varias áreas da programação, na<strong>Programação Back-end</strong>,
+                 onde foi meu primeiro contato, e agora nessa nova fase com <strong>Programação Fronte-end.</strong></p>
                 
                 <p><strong>Hobbies:</strong> Estudar programação, <strong>"Python", "JAVA", "JavaScript", "POSTGRESQL", "MongoDB"</strong>. Desemvolvimento Web: <strong>"NODE.JS", "REACT", "NEXT.JS", "HTML", "CSS"</strong>.</p>
             </div> 

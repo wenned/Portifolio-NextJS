@@ -24,7 +24,7 @@ export default function Home() {
           <Sobre/>
         </div>
 
-        <div className="bg-ws-body px-56 max-xl:px-8 max-md:p-0 h-screen flex text-5xl justify-center items-center">
+        <div className="bg-ws-body px-56 max-xl:px-8 max-md:p-0 flex h-full text-5xl justify-center items-center">
           <Projetos/>
         </div>
       </main>

@@ -19,7 +19,7 @@ export default function Contato(){
 
       const name = "< Wenned Developer />"
     return(
-        <div itemID='Contato' className="flex w-screen max-sm:flex-col" id="Contato">
+        <div itemID='Contato' className="flex w-screen max-sm:flex-col overflow-hidden" id="Contato">
 
              <div className='flex p-7 w-screen justify-around items-center border-r-2 border-white'>
                 <span className='max-lg:text-2xl cursor-pointer'><FaLinkedinIn alt="Linkdin" onClick={FaLink}/></span>

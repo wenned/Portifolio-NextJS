@@ -1,65 +1,75 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import InfoProjeto from "./projetos/first_portifolio"
 import RestAPI from "./projetos/restapi"
 
 export default function Projetos(){
 
-    const [statePortifolio, setStatePortifolio] = useState(0)
-    const [stateRest, setStateRest] = useState(0)
- 
+
+    const [stateName, setStateName] = useState('')
+
+    const [stateButton, setStateButton] = useState(0)
+
     function ActiveProjeto(args: string | any[]){
 
         switch(args){
 
-            case 'Portifolio':
-
-                if(statePortifolio === 0){
-                    setStatePortifolio(1)
-                    setStateRest(2)
-                }else{
-                    setStatePortifolio(0)
-                    setStateRest(0)
-                } 
+            case 'Front-End':
+                setStateName('Front-End')
+                setStateButton(1)
                 break
 
-            case 'RestAPI':
-
-            if(stateRest === 0 ){
-                setStateRest(1)
-                setStatePortifolio(2)
-
-            }else{
-                setStateRest(0)
-                setStatePortifolio(0)
-            }
-            break
+            case 'Back-End':
+                setStateName('Back-End')
+                setStateButton(2)
+                break
 
             default:
                 break
         }
     }
 
+    // useEffect(() => {
+    //     const idHidden = document.getElementById('Projetos');
+    //     const posHidden = idHidden?.getBoundingClientRect();
+
+    //     const hiddenButton = () => {
+    //         console.log(posHidden?.top);
+    //     }
+
+    //     if (typeof window !== 'undefined') {
+    //         window.addEventListener('scroll', hiddenButton);
+
+    //         return () => {
+    //             window.removeEventListener('scroll', hiddenButton);
+    //         };
+    //     }
+        
+    // }, []);
+
     return (
-        <section className="text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
-            <div className="w-11/12 flex justify-end -tracking-tighter">Projetos</div>
-                <div id="Projetos" className='border-l-2 border-ws-new flex w-11/12 h-full justify-around items-center flex-wrap'>
+        <section className="relative text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
+            <div className="p-4 w-11/12 flex justify-end -tracking-tighter max-sm:text-[0.60em] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
-                <div onClick={()=>{ActiveProjeto('Portifolio')}} 
-                    className={`${statePortifolio === 1?'animate-open_conteiner w-full overflow-clip cursor-pointer rounded-lg mx-2 flex  h-[80vh] items-center justify-center': 
-                                    statePortifolio === 0?'w-52 cursor-pointer mx-2 flex h-[30vh] p-2 bg-ws-c': 
-                                    statePortifolio ===2? 'hidden':''}`}>
-                    <div className={`${statePortifolio === 1?'hidden': statePortifolio === 0?'flex w-full h-full justify-center items-end rotate-[90deg] bg-ws-new text-2xl text-black font-bold -tracking-wide':''}`}>Portifolio</div>
-                    <div className={`${statePortifolio === 1?'block': statePortifolio === 0?'hidden':''}`}><InfoProjeto /></div>
-                </div>
+            <div className={stateButton == 0?'animate-spin-slow absolute top-[20%] border-t-2 border-ws-new rounded-[50%] w-28 h-28 flex justify-center items-center':'animate-kl  border-t-2 border-ws-new p-2'}>
+                <div className={stateButton == 0?'border-b-2 border-ws-new rounded-[50%] w-24 h-24 animate-spin-slow': 'hidden'}></div>
+            </div>
 
-                <div onClick={()=>{ActiveProjeto('RestAPI')}} className={`${stateRest === 1?'animate-open_conteiner w-full overflow-hidden cursor-pointer rounded-lg mx-2 flex  h-[80vh] items-center justify-center': 
-                    stateRest === 0?'cursor-pointer w-52 mx-2 flex  h-[30vh] p-2 items-start bg-ws-c': 
-                    stateRest ===2? 'hidden':''}`}>
-                    <div className={`${stateRest === 1?'hidden': stateRest === 0?'flex w-full h-full justify-center items-end rotate-[90deg] bg-ws-new text-2xl text-black font-bold -tracking-wide':''}`}>APIRestFull</div>
-                    <div className={`${stateRest === 1?'block': stateRest === 0?'hidden':''}`}><RestAPI/></div>
-                </div>
+            <div className="flex flex-col gap-9">{stateButton == 1?<InfoProjeto/>:''}</div>
+            <div className="flex flex-col gap-9">{stateButton == 2? <RestAPI/>: ''}</div>
+
+            {/* botao lateral */}
+            <div  className={stateButton==0?"hidden": "fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
+                <span onClick={()=>{ActiveProjeto('Front-End')}} className="justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Front-End</span>
+                <span onClick={()=>{ActiveProjeto('Back-End')}}  className="justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Back-End</span>
+            </div>
+            
+            {/* botal principal de entrada */}
+            <div id="Projetos" className={stateButton == 0 ?'border-l-2 border-ws-new flex w-11/12 h-screen items-center flex-wrap pb-8 flex-col justify-center gap-y-5 pt-[1.5em] -tracking-wide': 'hidden'}>
+                <span onClick={()=>{ActiveProjeto('Front-End')}} className="cursor-pointer w-2/3 h-[1em] justify-center items-center flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black max-sm:text-[0.37em] max-sm:w-11/12">Front-End</span>
+                <span className="bg-gradient-to-r from-transparent via-ws-new to-transparent w-2/3 h-[2px]"></span>
+                <span onClick={()=>{ActiveProjeto('Back-End')}}  className="cursor-pointer w-2/3 h-[1em] justify-center items-center flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black max-sm:text-[0.37em] max-sm:w-10/12">Back-End</span>
             </div>
         </section>
 
