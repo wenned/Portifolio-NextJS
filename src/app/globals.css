@@ -5,19 +5,21 @@
 
 @layer components {
     .comp-820 {
-        @apply rounded-full w-10 h-10 bg-ws-new;
+        @apply rounded-full w-6 h-6 text-xl;
     }
 
     .layout-comp-h {
-        @apply h-40 absolute bottom-9;
+        @apply h-20 absolute bottom-9;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black
     }
 
     .layout-comp-w {
-        @apply h-40 absolute top-9;
-    }
-
-    .texto {
+        @apply h-20 absolute top-9;
         writing-mode: vertical-rl;
         text-orientation: mixed;
-      }
+        @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black
+
+    }
 }
