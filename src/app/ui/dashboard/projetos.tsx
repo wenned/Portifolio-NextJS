@@ -60,9 +60,9 @@ export default function Projetos(){
             <div className="flex flex-col gap-9">{stateButton == 2? <RestAPI/>: ''}</div>
 
             {/* botao lateral */}
-            <div  className={stateButton==0?"hidden": "max-[820px]:bg-white max-[820px]:rounded-full max-[820px]:w-14 max-[820px]:h-14  fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
-                <span onClick={()=>{ActiveProjeto('Front-End')}} className="justify-center cursor-pointer border-r-2 max-[820px]:border-none border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Front-End</span>
-                <span onClick={()=>{ActiveProjeto('Back-End')}}  className="justify-center cursor-pointer border-r-2 max-[820px]:border-none border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Back-End</span>
+            <div  className={stateButton==0?"hidden": "max-[820px]:comp-820 fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
+                <span onClick={()=>{ActiveProjeto('Front-End')}} className="max-[820px]:layout-comp-h max-[820px]:texto justify-center cursor-pointer border-r-2 max-[820px]:border-none border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Front-End</span>
+                <span onClick={()=>{ActiveProjeto('Back-End')}}  className="max-[820px]:layout-comp-w max-[820px]:texto  justify-center cursor-pointer border-r-2 max-[820px]:border-none border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black">Back-End</span>
             </div>
             
             {/* botal principal de entrada */}

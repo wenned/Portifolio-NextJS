@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .comp-820 {
+        @apply rounded-full w-10 h-10 bg-ws-new;
+    }
+
+    .layout-comp-h {
+        @apply h-40 absolute bottom-9;
+    }
+
+    .layout-comp-w {
+        @apply h-40 absolute top-9;
+    }
+
+    .texto {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+}
