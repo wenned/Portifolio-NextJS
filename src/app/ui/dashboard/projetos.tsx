@@ -58,8 +58,8 @@ export default function Projetos(){
                 <div className={stateButton == 0?'border-b-2 border-ws-new rounded-[50%] w-24 h-24 animate-spin-slow': 'hidden'}></div>
             </div>
 
-            <div className="flex flex-col gap-9">{stateButton == 1?<InfoProjeto/>:''}</div>
-            <div className="flex flex-col gap-9">{stateButton == 2? <RestAPI/>: ''}</div>
+            <div className="flex flex-col gap-9 w-11/12">{stateButton == 1?<InfoProjeto/>:''}</div>
+            <div className="flex flex-col gap-9 w-11/12">{stateButton == 2? <RestAPI/>: ''}</div>
 
             {/* botao lateral */}
             <div  className={stateButton==0?"hidden": "max-[820px]:comp-820 fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
