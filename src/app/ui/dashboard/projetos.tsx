@@ -38,7 +38,7 @@ export default function Projetos(){
             const posHidden = idHidden?.getBoundingClientRect();
 
             if(posHidden?.y !== undefined){
-                if(posHidden?.y >= 464){setStateButton(0)}
+                if(posHidden?.y >= 464){setStateButton(0), setStateName('')}
             }
         };
         if (typeof window !== 'undefined') {
@@ -65,7 +65,7 @@ export default function Projetos(){
             {/* botao lateral */}
             <div className={stateButton==0?"hidden": "max-[820px]:comp-820 fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
                 <span className={isClient && window.innerWidth <= 820?'bg-yellow-300 w-1 h-1 animate-ping':''}></span>
-                <span onClick={()=>{ActiveProjeto('Front-End')}} className={isClient && window.innerWidth <= 820? "max-[820px]:layout-comp-h":"justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black"}>Front-End</span>
+                <span onClick={()=>{ActiveProjeto('Front-End')}} className={isClient && window.innerWidth <= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-h"}>Front-End</span>
                 <span onClick={()=>{ActiveProjeto('Back-End')}}  className={isClient && window.innerWidth <= 820? "max-[820px]:layout-comp-w":"justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black"}>Back-End</span>
             </div>
             
