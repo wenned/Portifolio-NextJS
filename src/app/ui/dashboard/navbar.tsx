@@ -19,20 +19,20 @@ export default function NavBar() {
             const elementO = navbar?.getBoundingClientRect();
 
             const statusNav = StatusNavBar();
-
+            
             if(statusNav.Inico <=211 && statusNav.Inico > -230){
                 setisInicio(true)
             }else{setisInicio(false)}
 
-            if(statusNav.Sobre <= 585 && -256 < statusNav.Sobre){
+            if(statusNav.Sobre <= 485 && -256 < statusNav.Sobre){
                 setisSobre(true)
             }else{setisSobre(false)}
 
-            if(statusNav.Projetos <= 600 && -10 < statusNav.Projetos){
+            if(statusNav.Projetos <= 550 && -10 < statusNav.Projetos){
                 setisProjetos(true)
             }else{setisProjetos(false)}
 
-            if(statusNav.Contato < 841){
+            if(statusNav.Contato < 741){
                 setisContato(true)
             }else{setisContato(false)}
 
