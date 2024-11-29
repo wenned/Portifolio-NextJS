@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { wsfont } from "../../src/app/ui/fonts";
+import { poiret } from "../../src/app/ui/fonts";
 
 export const metadata: Metadata = {
   title: 'Wenned Silva',
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={wsfont.className}>{children}</body>
+      <body className={poiret.className}>{children}</body>
     </html>
   )
 }
