@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { Poiret_One } from 'next/font/google'
 import './globals.css'
-
-const pioret = Poiret_One({ weight:['400'], subsets: ['latin'] })
+import { wsfont } from "../../src/app/ui/fonts";
 
 export const metadata: Metadata = {
   title: 'Wenned Silva',
@@ -16,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={pioret.className}>{children}</body>
+      <body className={wsfont.className}>{children}</body>
     </html>
   )
 }
