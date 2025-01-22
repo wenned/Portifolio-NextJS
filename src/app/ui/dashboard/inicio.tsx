@@ -13,31 +13,31 @@ export default function Inicio (){
         switch(args){
 
             case 'FJs':
-                setValor('JavaScript')
+                setValor(' JavaScript')
                 break
 
             case 'FaJava':
-                setValor('Java')
+                setValor(' Java')
                 break
 
             case 'FaPython':
-                setValor('Python')
+                setValor(' Python')
                 break
 
             case 'FaNodeJs':
-                setValor('Node.Js')
+                setValor(' Node.Js')
                 break
 
             case 'FaReact':
-                setValor('React')
+                setValor(' React')
                 break
 
             case 'FaHtml5':
-                setValor('Hypertext Markup Language')
+                setValor(' Hypertext Markup Language')
                 break
 
             case 'FaCss3':
-                setValor('Cascading Style Sheets')
+                setValor(' Cascading Style Sheets')
                 break 
 
             default:
@@ -72,7 +72,7 @@ export default function Inicio (){
 
                 <div className='relative flex justify-center items-center h-[150px] w-full'>
                     <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[375px]:text-[3rem] font-[Catamaran] text-ws-new'>" </span>
-                    <div className='relative flex justify-center items-center font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-base -tracking-widest'>{Valor}</div>
+                    <div className='relative flex justify-center items-center text-left font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-base -tracking-widest'>{Valor}</div>
                 </div>
             </div>
         </section>
