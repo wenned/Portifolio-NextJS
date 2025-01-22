@@ -55,8 +55,14 @@ export default function Inicio (){
                 <h1 className='font-bold h-20 max-[540px]:text-4xl'>Habilidades</h1>
 
                 <div className='flex py-4 text-4xl max-[375px]:text-2xl max-[540px]:w-11/12 w-10/12 justify-between z-10'>
-                    <span className='cursor-pointer '><FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/></span>
-                    <span className='cursor-pointer'><FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/></span>
+                    <span className='cursor-pointer relative flex'>
+                        <FaJs id='FJs' onClick={()=>{Habilidades('FJs')}}/>
+                        {/* <span className='absolute border-l-2 border-ws-new border-b-2 h-36 w-36 z-10'></span> */}
+                    </span>
+                    <span className='cursor-pointer relative flex'>
+                        <FaJava id='FaJava' onClick={()=>{Habilidades('FaJava')}}/>
+                        {/* <span className='absolute border-l-2 border-ws-new h-36 w-36'></span> */}
+                    </span>
                     <span className='cursor-pointer'><FaPython id='FaPython' onClick={()=>{Habilidades('FaPython')}}/></span>
                     <span className='cursor-pointer'><FaNodeJs id='FaNodeJs' onClick={()=>{Habilidades('FaNodeJs')}}/></span>
                     <span className='cursor-pointer'><FaReact id='FaReact' onClick={()=>{Habilidades('FaReact')}}/></span>
@@ -64,9 +70,9 @@ export default function Inicio (){
                     <span className='cursor-pointer'><FaCss3 id='FaCss3' onClick={()=>{Habilidades('FaCss3')}}/></span> 
                 </div>
 
-                <div className='relative flex justify-center items-center h-[150px] w-10/12 '>
+                <div className='relative flex justify-center items-center h-[150px] w-full'>
                     <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[375px]:text-[3rem] font-[Catamaran] text-ws-new'>" </span>
-                    <div className='relative flex justify-center items-center font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-xl -tracking-widest'>{Valor}</div>
+                    <div className='relative flex justify-center items-center font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-base -tracking-widest'>{Valor}</div>
                 </div>
             </div>
         </section>
