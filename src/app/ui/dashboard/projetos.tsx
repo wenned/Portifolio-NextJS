@@ -53,7 +53,7 @@ export default function Projetos(){
 
     return (
         <section className="relative text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
-            <div className="p-4 w-11/12 flex justify-end -tracking-tighter max-sm:text-[1.5rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
+            <div className="p-4 w-11/12 flex justify-end -tracking-tighter max-sm:text-[1.9rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
             <div id="Projetos" className={stateButton == 0?'animate-spin-slow absolute top-[20%] border-t-2 border-ws-new rounded-[50%] w-28 h-28 flex justify-center items-center':'animate-kl  border-t-2 border-ws-new p-2'}>
                 <div className={stateButton == 0?'border-b-2 border-ws-new rounded-[50%] w-24 h-24 animate-spin-slow': 'hidden'}></div>
