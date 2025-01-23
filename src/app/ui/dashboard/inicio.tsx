@@ -72,7 +72,7 @@ export default function Inicio (){
 
                 <div className='relative flex justify-center items-center h-[150px] w-full'>
                     <span className='max-[670px]:text-[8rem] max-[540px]:text-[6rem] font-bold text-[12rem] max-[375px]:text-[3rem] font-[Catamaran] text-ws-new'>" </span>
-                    <div className='relative flex justify-center items-center text-left font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-base -tracking-widest'>{Valor}</div>
+                    <div className='comp-align relative flex justify-center font-bold text-3xl max-[670px]:text-3xl max-[540px]:text-base -tracking-widest'>{Valor}</div>
                 </div>
             </div>
         </section>

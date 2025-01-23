@@ -22,4 +22,8 @@
         @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex;
 
     }
+
+    .comp-align {
+        text-align: center;
+    }
 }
