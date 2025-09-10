@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react"
 import InfoProjeto from "./projetos/first_portifolio"
 import RestAPI from "./projetos/restapi"
+import Image from 'next/image'
+
 import { SiClickup } from "react-icons/si";
 
 
@@ -55,7 +57,7 @@ export default function Projetos(){
         <section className="relative text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
             <div className="p-4 w-11/12 flex justify-end max-sm:text-[3rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
-            <div id="Projetos" className={stateButton == 0?'animate-spin-slow absolute top-[20%] border-t-2 border-ws-new rounded-[50%] w-28 h-28 flex justify-center items-center':'animate-kl  border-t-2 border-ws-new p-2'}>
+            <div id="Projetos" className={stateButton == 0?'animate-spin-slow absolute top-[50%] border-t-2 border-ws-new rounded-[50%] w-28 h-28 flex justify-center items-center':'animate-kl  border-t-2 border-ws-new p-2'}>
                 <div className={stateButton == 0?'border-b-2 border-ws-new rounded-[50%] w-24 h-24 animate-spin-slow': 'hidden'}></div>
             </div>
 
@@ -70,10 +72,23 @@ export default function Projetos(){
             </div>
             
             {/* botao principal de entrada */}
-            <div className={stateButton == 0 ?'border-l-2 border-ws-new flex w-11/12 h-screen items-center flex-wrap pb-8 flex-col justify-center gap-y-5 pt-[1.5em] -tracking-wide max-[820px]:text-[0.87em]':'hidden'}>
-                <span onClick={()=>{ActiveProjeto('Front-End')}} className="cursor-pointer w-2/3 h-[1em] justify-center items-center flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black max-sm:text-[0.37em] max-sm:w-11/12">Front-End</span>
-                <span className="bg-gradient-to-r from-transparent via-ws-new to-transparent w-2/3 h-[2px]"></span>
-                <span onClick={()=>{ActiveProjeto('Back-End')}}  className="cursor-pointer w-2/3 h-[1em] justify-center items-center flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black max-sm:text-[0.37em] max-sm:w-10/12">Back-End</span>
+            <div className={stateButton == 0 ?'border-l-2 border-ws-new flex w-11/12 h-screen items-center flex-wrap pb-8 flex-col justify-center gap-y-5 pt-[1.5em] -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
+                                                                                                                                                                                                                            
+                <div onClick={()=>{ActiveProjeto('Front-End')}} 
+                        className="cursor-pointer gap-y-7 flex justify-center flex-col text-lg
+                                    hover:opacity-75">
+                    <Image src="/backEnd.png" width={250} height={250} alt="imagem back-end"/>
+                    <span  className=" justify-center items-center flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black max-sm:text-[0.37em] max-sm:w-11/12">Front-End</span>
+                </div>
+                {/* <span className="bg-gradient-to-r from-transparent via-ws-new to-transparent w-2/3 h-[2px]"></span> */}
+
+                <div onClick={()=>{ActiveProjeto('Back-End')}}  
+                        className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
+                                     hover:opacity-75">
+                    <Image src="/frontEnd.png" width={210} height={210} alt="Imagem front-end"/>
+                    <span className=" justify-center items-center flex max-sm:text-[0.37em] max-sm:w-10/12">Back-End</span>
+                </div>
+            
             </div>
         </section>
     )
