@@ -52,7 +52,7 @@ export default function Inicio (){
 
             <div className='w-2/3 ml-3 flex justify-center items-center flex-col border-r-2 border-ws-new  max-[1150px]:w-full'>
 
-                <h1 className='font-bold h-20 max-[540px]:text-4xl -tracking-[-0.2em] bg-green-400'>Habilidades</h1>
+                <h1 className='font-bold h-20 max-[540px]:text-4xl -tracking-[-0.3em]'>Habilidades</h1>
 
                 <div className='flex py-4 text-4xl max-[375px]:text-2xl max-[540px]:w-11/12 w-10/12 justify-between z-10'>
                     <span className='cursor-pointer relative flex'>
