@@ -57,9 +57,7 @@ export default function Projetos(){
         <section className="relative text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
             <div className="p-4 w-11/12 flex justify-end max-sm:text-[2rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
-            <div  className={stateButton == 0?'max-sm:hidden animate-spin-slow absolute top-[50%] border-t-2 border-ws-new rounded-[50%] w-28 h-28 flex justify-center items-center':'animate-kl  border-t-2 border-ws-new p-2'}>
-                <div className={stateButton == 0?'border-b-2 border-ws-new rounded-[50%] w-24 h-24 animate-spin-slow': 'hidden'}></div>
-            </div>
+
 
             <div id="Projetos" className="flex flex-col gap-9 w-11/12">{stateButton == 1?<InfoProjeto/>:''}</div>
             <div className="flex flex-col gap-9 w-11/12">{stateButton == 2? <RestAPI/>: ''}</div>
@@ -70,16 +68,24 @@ export default function Projetos(){
                 <span onClick={()=>{ActiveProjeto('Front-End')}} className={isClient && window.innerWidth <= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-h"}>Front-End</span>
                 <span onClick={()=>{ActiveProjeto('Back-End')}}  className={isClient && window.innerWidth >= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-w"}>Back-End</span>
             </div>
-            
+
+            <div  className="heidden 
+                                max-md:animate-kl  max-md:border-t-2 max-md:border-ws-new max-md:p-2">
+                {/* <div className='border-b-2 border-ws-new rounded-[50%] w-20 h-20 animate-spin-slow max-md:hidden'></div> */}
+            </div>              
             {/* botao principal de entrada */}
-            <div className={stateButton == 0 ?' border-l-2 border-ws-new flex w-11/12 h-screen items-center flex-wrap max-sm:flex-nowrap  max-sm:gap-y-14 flex-col justify-center gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
-                                                                                                                                                                                                                            
+            <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-screen items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
+                
+
+
                 <div onClick={()=>{ActiveProjeto('Front-End')}} 
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
                                     hover:opacity-75">
                     <Image src="/backEnd.png" width={250} height={250} className="max-sm:w-28 " alt="imagem back-end"/>
                     <span  className=" justify-center items-center flex ">Front-End</span>
                 </div>
+
+
 
                 <div onClick={()=>{ActiveProjeto('Back-End')}}  
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
