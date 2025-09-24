@@ -74,14 +74,14 @@ export default function Projetos(){
             {/* botao principal de entrada */}
             <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-screen items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
                 
-                <div onClick={()=>{ActiveProjeto('Front-End')}} 
+                <div onClick={()=>{ActiveProjeto('Back-End')}} 
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
                                     hover:opacity-75">
                     <Image src="/backEnd.png" width={250} height={250} className="max-sm:w-28 " alt="imagem back-end"/>
                     <span  className=" justify-center items-center flex ">Back-End</span>
                 </div>
 
-                <div onClick={()=>{ActiveProjeto('Back-End')}}  
+                <div onClick={()=>{ActiveProjeto('Front-End')}}  
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
                                      hover:opacity-75">
                     <Image src="/frontEnd.png" width={210} height={210} className="max-sm:w-28" alt="Imagem front-end"/>
