@@ -74,20 +74,28 @@ export default function Projetos(){
             {/* botao principal de entrada */}
             <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-screen items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
                 
-                <div onClick={()=>{ActiveProjeto('Back-End')}} 
-                        className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
-                                    hover:opacity-75">
-                    <Image src="/backEnd.png" width={250} height={250} className="max-sm:w-28 " alt="imagem back-end"/>
-                    <span  className=" justify-center items-center flex ">Back-End</span>
+                <div onClick={()=>{ActiveProjeto('Back-End')}}
+                        className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-2xl
+                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10">
+                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100" >
+                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
+                                                <Image src="/node.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
+                                            </span>                                                
+                                            <span className=" justify-center items-center flex">Back-End</span>
+                                        </span>
                 </div>
 
-                <div onClick={()=>{ActiveProjeto('Front-End')}}  
-                        className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-lg
-                                     hover:opacity-75">
-                    <Image src="/frontEnd.png" width={210} height={210} className="max-sm:w-28" alt="Imagem front-end"/>
-                    <span className=" justify-center items-center flex">Front-End</span>
+                <div onClick={()=>{ActiveProjeto('Front-End')}}
+                        className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-2xl
+                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10">
+                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100" >
+                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
+                                                <Image src="/frontEnd.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
+                                            </span>                                                
+                                            <span className=" justify-center items-center flex">Front-End</span>
+                                        </span>
                 </div>
-            
+
             </div>
         </section>
     )
