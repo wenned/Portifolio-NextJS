@@ -81,7 +81,7 @@ export default function Projetos(){
                                             <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
                                                 <Image src="/node.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
                                             </span>                                                
-                                            <span className=" justify-center items-center flex">Back-End</span>
+                                            <span className="text-black justify-center items-center flex">Back-End</span>
                                         </span>
                 </div>
 
@@ -92,7 +92,7 @@ export default function Projetos(){
                                             <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
                                                 <Image src="/frontEnd.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
                                             </span>                                                
-                                            <span className=" justify-center items-center flex">Front-End</span>
+                                            <span className="text-black justify-center items-center flex">Front-End</span>
                                         </span>
                 </div>
 
