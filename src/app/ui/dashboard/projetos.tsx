@@ -54,7 +54,7 @@ export default function Projetos(){
     }, []);
 
     return (
-        <section className="relative text-white text-7xl w-screen h-screen  max-sm:h-[150vh] justify-center items-center flex flex-col">
+        <section className=" relative text-white text-7xl w-screen h-screen  max-sm:h-[180vh] justify-center items-center flex flex-col">
             <div className="p-4 w-11/12 flex justify-end max-sm:text-[2rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
 
@@ -72,14 +72,17 @@ export default function Projetos(){
             <div  className="heidden max-md:animate-kl  max-md:border-t-2 max-md:border-ws-new max-md:p-2"></div>        
 
             {/* botao principal de entrada */}
-            <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-screen items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
+            <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-full items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
                 
                 <div onClick={()=>{ActiveProjeto('Back-End')}}
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-2xl
-                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10">
-                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100" >
-                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
-                                                <Image src="/node.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
+                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10
+                                            max-sm:w-72 max-sm:h-[400px]">
+                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100
+                                                            max-sm:w-64 max-sm:h-72" >
+                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl
+                                                                max-sm:w-40 max-sm:h-40">
+                                                <Image src="/node.png" width={130} height={130} className="max-sm:w-20" alt="Imagem front-end"/>
                                             </span>                                                
                                             <span className="text-black justify-center items-center flex">Back-End</span>
                                         </span>
@@ -87,9 +90,12 @@ export default function Projetos(){
 
                 <div onClick={()=>{ActiveProjeto('Front-End')}}
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-2xl
-                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10">
-                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100" >
-                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl">
+                                      bg-green-300 w-96 h-[500px] rounded-xl bg-opacity-10
+                                            max-sm:w-72 max-sm:h-[400px]">
+                                        <span className="bg-green-300 bg-opacity-15 w-80 h-96 flex justify-center items-center rounded-xl flex-col gap-5 opacity-100
+                                                        max-sm:w-64 max-sm:h-72" >
+                                            <span className="bg-black w-52 h-52 flex justify-center items-center rounded-[30px] shadow-xl
+                                                             max-sm:w-40 max-sm:h-40">
                                                 <Image src="/frontEnd.png" width={130} height={130} className="max-sm:w-28" alt="Imagem front-end"/>
                                             </span>                                                
                                             <span className="text-black justify-center items-center flex">Front-End</span>
