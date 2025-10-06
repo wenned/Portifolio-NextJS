@@ -54,7 +54,7 @@ export default function Projetos(){
     }, []);
 
     return (
-        <section className="relative text-white text-7xl w-screen h-screen justify-center items-center flex flex-col">
+        <section className="relative text-white text-7xl w-screen h-screen  max-sm:h-[150vh] justify-center items-center flex flex-col">
             <div className="p-4 w-11/12 flex justify-end max-sm:text-[2rem] max-sm:pb-8 max-sm:pt-8">Projetos {stateName}</div>
 
 
