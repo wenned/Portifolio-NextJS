@@ -2,6 +2,7 @@ import Contato from "./ui/dashboard/Contato";
 import Sobre from "./ui/dashboard/Sobre";
 import Inicio from "./ui/dashboard/inicio";
 import Logo from "./ui/dashboard/logo/logows";
+import {LogoFull} from "./ui/dashboard/logo/logofull";
 import NavBar from "./ui/dashboard/navbar";
 import Projetos from "./ui/dashboard/projetos";
 
@@ -9,8 +10,9 @@ export default function Home() {
   return (
     < >
       <header>
-        <nav className="bg-ws-body h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-[100vh]">
+        <nav className="bg-ws-body h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-screen">
           <Logo/>
+          {/* <LogoFull/> */}
           <NavBar/>
         </nav>
       </header>

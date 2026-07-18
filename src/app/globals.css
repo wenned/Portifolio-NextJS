@@ -1,29 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@theme {
+  --tracking-wide: -0.28em;
+  --tracking-widest: -0.4em;
 
-@layer components {
-    .comp-820 {
-        @apply rounded-full w-6 h-6 text-lg;
+  --color-ws-hov: #e3dca1;
+  --color-ws-l: #f0c27b;
+  --color-ws-c: #c2c2c2;
+  --color-ws-body: #1c1c24;
+  --color-ws-new: #07edadff;
+  --color-ws-projeto: #c9fdef;
+
+  --font-wsfont: Poiret One, sans-serif;
+
+  --animate-spin-slow: spin 5s linear infinite;
+  --animate-retorno: screver 1s ease-in-out forwards;
+  --animate-kl: brRetorn 2s ease-in-out forwards;
+
+  @keyframes screver {
+    0% {
+      width: 0%;
     }
-
-    .layout-comp-h {
-        @apply h-20 absolute bottom-9;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex;
+    100% {
+      width: 90%;
     }
-
-    .layout-comp-w {
-        @apply h-20 absolute top-9;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex;
-
+  }
+  @keyframes brRetorn {
+    0% {
+      border-radius: 50%;
+      width: 7rem;
+      left: auto;
     }
-
-    .comp-align {
-        text-align: center;
+    50% {
+      border-radius: 0%;
+      width: 7rem;
+      left: auto;
     }
+    100% {
+      border-radius: 0%;
+      width: 74vw;
+      left: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility comp-820 {
+  @apply rounded-full w-6 h-6 text-lg;
+}
+
+@utility layout-comp-h {
+  @apply h-20 absolute bottom-9;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex;
+}
+
+@utility layout-comp-w {
+  @apply h-20 absolute top-9;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  @apply justify-center cursor-pointer border-ws-new overflow-hidden whitespace-nowrap flex;
+}
+
+@utility comp-align {
+  text-align: center;
+}
+
+@utility position-v {
+    /* Força o fluxo do texto a ser vertical, da esquerda para a direita */
+  writing-mode: vertical-lr;
+    /* Faz as letras ficarem em pé (orientação normal), empilhadas uma abaixo da outra */
+  text-orientation: upright;
+     /* Remove o espaçamento padrão de quebra de linha vertical se necessário */
+  letter-spacing: 0.1em;
 }

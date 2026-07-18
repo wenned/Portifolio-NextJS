@@ -65,14 +65,14 @@ export default function Projetos(){
             {/* botao lateral */}
             <div className={stateButton==0?"hidden": "max-[820px]:comp-820 fixed bottom-[50%] right-0 z-0 border-l-2 border-ws-new w-44 h-28 flex justify-center items-center text-3xl flex-col gap-5"}>
                 <span className={isClient && window.innerWidth <= 820?'':'bg-yellow-300 w-1 h-1 animate-ping'}></span>
-                <span onClick={()=>{ActiveProjeto('Front-End')}} className={isClient && window.innerWidth <= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-h"}>Front-End</span>
-                <span onClick={()=>{ActiveProjeto('Back-End')}}  className={isClient && window.innerWidth >= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-gradient-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-w"}>Back-End</span>
+                <span onClick={()=>{ActiveProjeto('Front-End')}} className={isClient && window.innerWidth <= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-linear-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-h"}>Front-End</span>
+                <span onClick={()=>{ActiveProjeto('Back-End')}}  className={isClient && window.innerWidth >= 820? "justify-center cursor-pointer border-r-2 border-ws-new w-36 animate-retorno overflow-hidden whitespace-nowrap flex hover:bg-linear-to-r from-transparent via-ws-projeto to-transparent hover:text-black":"max-[820px]:layout-comp-w"}>Back-End</span>
             </div>
 
             <div  className="heidden max-md:animate-kl  max-md:border-t-2 max-md:border-ws-new max-md:p-2"></div>        
 
             {/* botao principal de entrada */}
-            <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-full items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 -tracking-[-0.2em] max-[820px]:text-[0.87em]':'hidden'}>
+            <div className={stateButton == 0 ?' flex-row border-l-2 border-ws-new flex w-11/12 h-full items-center max-sm:flex-col max-sm:gap-y-14 justify-around gap-y-5 pt-1 tracking-[0.2em] max-[820px]:text-[0.87em]':'hidden'}>
                 
                 <div onClick={()=>{ActiveProjeto('Back-End')}}
                         className="cursor-pointer gap-y-7 flex justify-center items-center flex-col text-2xl
