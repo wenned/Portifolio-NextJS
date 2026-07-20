@@ -11,8 +11,12 @@ export default function Home() {
     < >
       <header>
         <nav className="bg-ws-body h-screenbg-gradient-to-b from-ws flex flex-col justify-center items-center h-screen">
-          <Logo/>
-          {/* <LogoFull/> */}
+          <div className="block lg:hidden">
+            <Logo />
+          </div>
+          <div className="hidden lg:block">
+            <LogoFull />
+          </div>
           <NavBar/>
         </nav>
       </header>
